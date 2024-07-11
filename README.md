@@ -28,3 +28,13 @@ You can simulate pass-by-reference by passing a pointer to a value and then
 changing the value the pointer is pointing to (not the value of the pointer itself, 
 i.e. you could not make the pointer point to a different location within the function)
 by dereferencing the pointer. 
+
+## arrays vs pointers
+
+- https://www.geeksforgeeks.org/difference-between-array-and-pointers/
+
+- sizeof(arr): gives number of bytes of `arr`
+- sizeof(ptr): always gives same size--size of pointer memory address
+
+- When an array is passed as a parameter to a function it becomes a pointer
+  - You cannot get the size of the object anymore!
