@@ -38,3 +38,10 @@ by dereferencing the pointer.
 
 - When an array is passed as a parameter to a function it becomes a pointer
   - You cannot get the size of the object anymore!
+
+## Formatting
+
+- Use `clangd`
+  - Can be installed with `Mason` in `Neovim`
+  - Add a `.clang-format` file to root of project (or at `$HOME/.clang-format` for it 
+  to be global) to specify a custom formatting style.
