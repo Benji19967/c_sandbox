@@ -1,10 +1,17 @@
 #include <stdio.h>  // contains type 'FILE'
 
-FILE *fptr;
-
 int main() {
-  fptr = fopen("sample.csv", "r");
-  // TODO: read
-  // https://stackoverflow.com/questions/174531/how-to-read-the-content-of-a-file-to-a-string-in-c
+  char stringBuffer[200];
+
+  FILE *fptr = NULL;
+  fptr = fopen("temperature.csv", "r");
+
+  // one call to fscanf reads one line
+  if (fptr != NULL) {
+    while (fscanf(fptr, "%s", stringBuffer) != EOF) {
+      printf("%s\n", stringBuffer);
+    }
+  }
+
   fclose(fptr);
 }
