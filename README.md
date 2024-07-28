@@ -45,3 +45,24 @@ by dereferencing the pointer.
   - Can be installed with `Mason` in `Neovim`
   - Add a `.clang-format` file to root of project (or at `$HOME/.clang-format` for it 
   to be global) to specify a custom formatting style.
+
+## Object files
+
+Object files are the real output from compilation. 
+
+- It's maching code
+- Additional info
+  - It tells the linker what symbols (names of global objects, functions, etc)
+  are in it
+  - It tells the linker what symbols it requires to work 
+
+To generate object files use the `-c` flag: `gcc -c`
+
+## Linker 
+
+A linker takes all object files, along with other necessary libraries and modules,
+and bundles them into one executable.
+
+Most compilers just do this on their own (unless you tell them to just compile 
+like: `gcc -c`)
+
