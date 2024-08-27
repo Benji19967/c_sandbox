@@ -8,6 +8,10 @@
 hardware. 
 - The language is efficient. It is widely used in systems programming.
 
+## Interview questions
+
+https://dev.to/pauljlucas/c-interview-questions-4igp
+
 ## Confirm your compiler is working
 
 ### MacOS
