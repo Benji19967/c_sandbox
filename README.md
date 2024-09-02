@@ -70,3 +70,17 @@ and bundles them into one executable.
 Most compilers just do this on their own (unless you tell them to just compile 
 like: `gcc -c`)
 
+## Errors
+
+- There are no exceptions in C
+
+### Errno
+
+https://en.wikipedia.org/wiki/Errno.h
+
+- Error codes can be found in `<errno.h>`
+    - `errno` acts like an integer variable
+    - When (some) functions detect an error, they store a value in `errno`
+        - The function will typically return `NULL` or `-1` to indicate that an error 
+        was detected (and hence, that `errno` was set to a non-zero value)
+    - At program startup the value is `0`
